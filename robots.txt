@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scql.pages.dev/sitemap.xml
