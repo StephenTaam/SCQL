@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华南齐鲁网</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --paper: #fffdf8;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --brand: #8b1e2d;
+      --brand-dark: #5f121d;
+      --line: #e8dfd2;
+      --accent: #c7922d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 0%, #fff9ee 0%, transparent 45%),
+        radial-gradient(circle at 80% 100%, #f2e9db 0%, transparent 40%),
+        var(--bg);
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(1080px, 92vw);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 253, 248, 0.85);
+      backdrop-filter: blur(3px);
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    header {
+      padding: 2.2rem 0 1.2rem;
+    }
+
+    .brand {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--brand);
+      letter-spacing: 0.08em;
+    }
+
+    .tagline {
+      margin: 0.4rem 0 1rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.1rem;
+      flex-wrap: wrap;
+      padding-bottom: 0.8rem;
+      border-bottom: 2px solid var(--line);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    nav a.active {
+      color: var(--brand);
+      border-bottom: 2px solid var(--brand);
+      padding-bottom: 0.2rem;
+    }
+
+    main {
+      padding: 1.4rem 0 2.5rem;
+      display: grid;
+      gap: 1.2rem;
+    }
+
+    .hero {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(79, 40, 13, 0.08);
+    }
+
+    .hero img {
+      width: 100%;
+      height: clamp(200px, 38vw, 420px);
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-body {
+      padding: 1.2rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .hero h2 {
+      margin: 0 0 0.6rem;
+      line-height: 1.35;
+      font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+    }
+
+    .hero p { margin: 0 0 1rem; }
+
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.55rem 0.95rem;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .btn:hover { background: var(--brand-dark); }
+
+    .section-title {
+      margin: 0.3rem 0 0;
+      font-size: 1.15rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.6rem;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.9rem;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 0.9rem;
+    }
+
+    .card .small { color: var(--muted); font-size: 0.88rem; }
+    .card h3 { margin: 0.4rem 0 0.45rem; font-size: 1.06rem; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.4rem 0 2.4rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>华南齐鲁网 · 静态版</span>
+      <span>更新日期：2026-02-28</span>
+    </div>
+  </div>
+
+  <header class="container">
+    <h1 class="brand">华南齐鲁网</h1>
+    <p class="tagline">立足华南，关注历史、社会与世界视角</p>
+    <nav>
+      <a href="#" class="active">首页</a>
+      <a href="#">历史</a>
+      <a href="#">社会</a>
+      <a href="#">国际</a>
+      <a href="#">评论</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="hero">
+      <img src="resources/html_file/khmerrouge/flag_km.png" alt="红色高棉历史专题封面">
+      <div class="hero-body">
+        <div class="meta">分类：历史 · 发布：2026-02-28 · 首篇文章</div>
+        <h2>25%的灭绝：柬埔寨的红色浩劫</h2>
+        <p>从红色高棉的兴起、极端政策到审判与历史余波，系统梳理这段20世纪最黑暗的历史之一。</p>
+        <a class="btn" href="resources/html_file/khmerrouge/khmerrouge.html">阅读全文</a>
+      </div>
+    </article>
+
+    <h2 class="section-title">更多文章（预留）</h2>
+    <section class="list">
+      <article class="card">
+        <div class="small">历史 · 待发布</div>
+        <h3>待发布文章 02</h3>
+        <p>这里将展示后续历史专题文章摘要。</p>
+      </article>
+      <article class="card">
+        <div class="small">社会 · 待发布</div>
+        <h3>待发布文章 03</h3>
+        <p>这里将展示后续社会观察类文章摘要。</p>
+      </article>
+      <article class="card">
+        <div class="small">国际 · 待发布</div>
+        <h3>待发布文章 04</h3>
+        <p>这里将展示后续国际栏目文章摘要。</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 华南齐鲁网 · 首页
+  </footer>
+</body>
+</html>
